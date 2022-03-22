@@ -14,6 +14,7 @@
                         <li class="nav-item"><a href="{{route('user.registerform')}}" class="nav-link">Registration</a></li>
                         <li class="nav-item"><a href="{{route('user.login')}}" class="nav-link">Login</a></li>
                         @else
+                        <li class="nav-item"><a href="#" class="nav-link">{{Auth::user()->name }}</a></li>
                             <li class="nav-item"><a href="{{route('user.logout')}}" class="nav-link">Log out</a></li>
                         @endif
                     </ul>
